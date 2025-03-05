@@ -40,7 +40,6 @@ django-taggit==6.1.0
 django-timezone-field==7.0
 djangorestframework==3.15.2
 djangorestframework-jwt==1.11.0
-djangorestframework-simplejwt==5.3.1
 djoser==2.3.1
 drf-yasg==1.21.8
 firebase-admin==6.6.0
@@ -59,6 +58,7 @@ google-resumable-media==2.7.2
 googleapis-common-protos==1.67.0
 grpcio==1.70.0
 grpcio-status==1.70.0
+gunicorn==23.0.0
 httplib2==0.22.0
 idna==3.10
 inflection==0.5.1
