@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset and Body Styling */
+body {
+  @apply m-0 font-sans bg-gray-50 text-gray-800;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container for General Layout */
+.container {
+  @apply mx-auto max-w-screen-xl px-6 py-12;
+}
+
+/* Basic Page Styling */
+.page {
+  @apply bg-white;
+}
+
+/* Table Container with Scroll */
+.table-container {
+  @apply max-h-[500px] overflow-y-auto overflow-x-auto w-full rounded-lg shadow-lg bg-white;
+}
+
+/* Table Styling */
+table {
+  @apply w-full table-auto bg-white shadow-xl rounded-lg;
+}
+
+thead th {
+  @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 text-left border-b-2 border-blue-800;
+}
+
+tbody tr {
+  @apply hover:bg-blue-100 transition-all duration-300;
+}
+
+td,
+th {
+  @apply px-6 py-3 border-b border-gray-200;
+}
+
+th {
+  @apply font-semibold;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+  @apply bg-blue-50;
+}
+
+/* Buttons (General, Delete, Edit) */
+button {
+  @apply text-blue-500 hover:text-blue-700 transition-colors duration-200;
+}
+
+button.delete {
+  @apply text-red-500 hover:text-red-700;
+}
+
+button.edit {
+  @apply text-green-500 hover:text-green-700;
+}
+
+/* Pagination Styling */
+.pagination {
+  @apply flex justify-center space-x-4 mt-6;
+}
+
+.pagination button {
+  @apply px-4 py-2 rounded-lg transition-all duration-200;
+}
+
+.pagination .active {
+  @apply bg-blue-500 text-white;
+}
+
+.pagination .inactive {
+  @apply bg-gray-200 hover:bg-blue-300;
+}
+
+/* Dashboard Widget Cards */
+.widget-card {
+  @apply bg-indigo-50 shadow-lg rounded-xl p-6 m-4 transition-all hover:scale-105 hover:shadow-xl;
+}
+
+.widget-card-header {
+  @apply text-xl font-semibold text-gray-900 mb-4;
+}
+
+.widget-card-body {
+  @apply text-gray-700;
+}
+
+/* Add Spacing Between Sections */
+.section {
+  @apply mb-12;
+}
+
+/* Card Hover Effect */
+.widget-card:hover {
+  @apply bg-indigo-50;
+}
+
+/* Sidebar / Navigation (Optional) */
+.sidebar {
+  @apply bg-gradient-to-r from-blue-600 to-blue-800 text-white w-64 p-6 h-screen fixed top-0 left-0;
+}
+
+.sidebar a {
+  @apply block text-white text-lg py-3 hover:bg-blue-100 rounded-lg transition-colors duration-200;
+}
+
+.sidebar a.active {
+  @apply bg-blue-700 text-white;
+}
+
+/* Navigation Bar */
+.navbar {
+  @apply flex items-center justify-between bg-blue-800 text-white p-4 fixed w-full top-0 z-50 shadow-md;
+}
+
+.navbar a {
+  @apply text-white text-lg hover:text-blue-200 transition-all;
+}
+
+.navbar .logo {
+  @apply text-2xl font-bold;
+}
+
+/* Navbar Dropdown Menu */
+.navbar .dropdown {
+  @apply relative;
+}
+
+.navbar .dropdown-content {
+  @apply hidden absolute bg-white text-black shadow-lg right-0 mt-2 w-48 rounded-lg;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  @apply block;
+}
+
+.navbar .dropdown-content a {
+  @apply text-gray-800 py-2 px-4 block hover:bg-gray-100 rounded-lg;
+}
+
+/* Modal Styling */
+.modal {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-lg p-8 shadow-lg max-w-lg w-full;
+}
+
+.modal-header {
+  @apply text-xl font-semibold text-gray-800 mb-4;
+}
+
+.modal-body {
+  @apply text-gray-700 mb-6;
+}
+
+.modal-footer {
+  @apply flex justify-end space-x-4;
+}
+
+.modal-footer button {
+  @apply px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-200;
+}
+
+.modal-footer .cancel-btn {
+  @apply bg-gray-300 hover:bg-gray-400 text-black;
+}
+/* Home Button */
+button.home {
+  @apply text-black hover:text-gray-200;
+}
