@@ -82,7 +82,7 @@ psycopg2==2.9.10
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pycparser==2.22
-PyJWT==2.10.1
+PyJWT==1.7.1
 PyMySQL==1.1.1
 pyparsing==3.2.1
 python-crontab==3.2.0
